@@ -8,7 +8,7 @@ const requireindex = require( 'requireindex' );
  * Array of task objects, where each object key is a Probot-formatted event
  * name, the value a function handler for the event.
  *
- * @type {[type]}
+ * @type {Object[]}
  */
 const tasks = Object.values( requireindex( 'tasks' ) );
 
