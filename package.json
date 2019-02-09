@@ -1,0 +1,41 @@
+{
+	"name": "gutenbot",
+	"private": true,
+	"version": "1.0.0",
+	"description": "All-in-one Gutenberg repository assistant",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon",
+		"start": "probot run ./index.js",
+		"lint": "wp-scripts lint-js .",
+		"test": "npm run lint"
+	},
+	"keywords": [
+		"probot",
+		"gutenberg"
+	],
+	"author": {
+		"name": "Andrew Duthie",
+		"email": "andrew@andrewduthie.com",
+		"url": "https://andrewduthie.com"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@wordpress/scripts": "^2.5.0",
+		"nodemon": "^1.18.10",
+		"smee-client": "^1.0.2"
+	},
+	"dependencies": {
+		"lodash": "^4.17.11",
+		"minimatch": "^3.0.4",
+		"probot": "^7.5.0",
+		"requireindex": "^1.2.0"
+	},
+	"nodemonConfig": {
+		"exec": "npm start",
+		"watch": [
+			".env",
+			"."
+		]
+	}
+}
