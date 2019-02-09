@@ -13,8 +13,8 @@ const minimatch = require( 'minimatch' );
  * @type {Array}
  */
 const CODEOWNERS_PATHS = [
-	'CODEOWNERS',
 	posix.join( '.github', 'CODEOWNERS' ),
+	'CODEOWNERS',
 ];
 
 /**
